@@ -1,0 +1,11 @@
+//        
+        $data = array( 
+            'data' => DaftarGapok::all(),
+            'cs' => JenisTunjangan::all(),
+            'ss' => TunjanganKesehatan::all(),
+            'aa' => TunjanganKeluarga::all()
+            );
+    	return view('pegawai/buat_pegawai')->with($data);
+    }
+
+//
